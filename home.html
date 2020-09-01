@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;600;800&display=swap" rel="stylesheet">   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="home.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<title>
+
+</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="shortcut icon" href="png/favicon.png" type="image/png">
+</head>
+<body>
+  <div class="loader_bg">
+    <img id="logo-loader" src="png/logo.png" alt="">
+  </div> 
+        <img id = "logo" src="png/logo.png" alt="">
+        <div class="links">
+            <a href="#txt"><p id="planos"><b>Planos</b></p></a> 
+            <a href="#sd"><p id="download"><b>Download</b></p></a>
+            <a href="#quemsomos"><p id="quem"><b>Quemsomos</b></p></a>
+            <a href=""><img id="earth" src="png/earth.png" alt=""></a>
+            <a href=""><p id="logintext"><b>Login</b></p></a>
+        </div>
+      
+    </div>
+        <img id="ballerina" src="png/ballerina.png" alt="">
+    <div>
+        <h1 id="sua"><b>Sua partitura digital de danca</b></h1>
+        <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur necessitatibus nobis, ab laudantium at sed pariatur quidem, est, culpa voluptate excepturi dolores ipsam rerum autem aliquam molestiae sapiente nemo.</p>
+        <p id="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur necessitatibus nobis, ab laudantium at sed pariatur quidem, est, culpa voluptate excepturi dolores ipsam rerum autem aliquam molestiae sapiente nemo.</p>
+    </div>
+    <div class="butt">
+      <a href=""><button id="signupnow"><b>Assinar ja!</b></button></a>
+      <a href=""><button id="downloadnow"><b>Baxiar gratis</b></button></a>
+    </div>
+   
+<div class="slideshow">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <video id="vid" src="vid/ballet.mp4" autoplay muted loop ></video>
+  </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <video id="vid" src="vid/ballet2.mp4" autoplay muted loop></video>
+    </div>
+    <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <video id="vid" src="vid/ballet3.mp4" autoplay muted loop></video>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+  
+<div>
+    <h1 id="txt">Planos</h1>
+    <p id="txtlo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid quaerat natus omnis deserunt dicta soluta sunt nobis iusto eligendi, reiciendis id veritatis hic necessitatibus alias illo sint culpa minus?</p>
+</div>
+<div class="pricing-plan-content">
+  <section class="pricing-plan pricing-plan-e">
+  
+    <div class="pricing-plan__header">
+      <h1 class="pricing-plan__title">
+        Basic
+      </h1>
+      <h2 class="pricing-plan__summery">
+        Por mes <p id="crie">Crie coreografias basicas</p>
+      </h2>
+    </div>
+    <div class="pricing-plan__description">
+      <ul class="pricing-plan__list">
+        <li class="pricing-plan__feature">Visualize e edite projetos Petipa</li>
+        <li class="pricing-plan__feature">Desenhe as trajetorials de movimento para ate 5 artistas</li>
+        <li class="pricing-plan__feature">Esquematize o espaco cenico inciua musica e marque e edite os compassos</li>
+        <li class="pricing-plan__feature">Acesso ao Portal de videos com cursos e tutonais</li>
+        
+      </ul>
+    </div>
+    <div class="pricing-plan__actions">
+      <p class="pricing-plan__cost">
+        $25
+      </p>
+      <a href="./" class="pricing-plan__button">Purchase</a>
+    </div>
+    </section>
+    <section class="pricing-plan pricing-plan--highlited">
+      <div class="pricing-plan__special-text">Recommended</div>
+    <div class="pricing-plan__header">
+      <h1 class="pricing-plan__title">
+        Pro
+      </h1>
+      <h2 class="pricing-plan__summery">
+        Por mes <p id="crie">Crie coreografias para espetaculos</p>
+      </h2>
+    </div>
+    <div class="pricing-plan__description">
+      <ul class="pricing-plan__list">
+        <li class="pricing-plan__feature">Tenha as vantages do Plano basic e ainda</li>
+        <li class="pricing-plan__feature">Desenhe as trajetoria de movimento para ate 16 artistas em cena</li>
+        <li class="pricing-plan__feature">Insira a maracao de paico e sua planta-baixa</li>
+        <li class="pricing-plan__feature">Obtenha 02 licencas extras do Petipa Basic para dar ou vender</li>
+      </ul>
+    </div>
+    <div class="pricing-plan__actions">
+      <p class="pricing-plan__cost">
+        $50
+      </p>
+      <p class="pricing-plan__text">
+        per month
+      </p>
+      <a href="./" class="pricing-plan__button">Purchase</a>
+    </div>
+    </section>
+    <section class="pricing-plan">
+    <div class="pricing-plan__header">
+      <h1 class="pricing-plan__title">
+        Pro+
+      </h1>
+      <h2 class="pricing-plan__summery">
+        Por mes <p id="crie">Pro + 10 Basics</p>
+      </h2>
+    </div>
+    <div class="pricing-plan__description">
+      <ul class="pricing-plan__list">
+        <li class="pricing-plan__feature">Desenhe para um numero ilimitado de artistas em cena</li>
+        <li class="pricing-plan__feature">Insira a marcacao de palco e sua planta-baixa</li>
+        <li class="pricing-plan__feature">Obtenha 10 licencas extras do Petipa Basic para dar ou vender</li>
+        <li class="pricing-plan__feature">Compre mais licencas extras</li>
+        <li class="pricing-plan__feature">Por precos promocionais</li>
+      </ul>
+    </div>
+    <div class="pricing-plan__actions">
+      <p class="pricing-plan__cost">
+        $225
+      </p>
+      <p class="pricing-plan__text">
+        per month
+      </p>
+      <a href="./" class="pricing-plan__button">Purchase</a>
+    </div>
+    </section>
+    
+</div>
+
+
+  <div>
+    <h1 id="exp">Experimente gratis!</h1>
+    <p id="explo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid quaerat natus omnis deserunt dicta soluta sunt nobis iusto eligendi, reiciendis id veritatis hic necessitatibus alias illo sint culpa minus? <a href="#sd">Planos</a></p>
+</div>
+<div class="download-part">
+  <h1 id="sd">Download</h1>
+</div>
+<div class="icons">
+  <img id="windows-icon" src="svg/windows.svg" alt="">
+  <img id="apple-icon" src="svg/apple.svg" alt="">
+  <img id="android-icon" src="svg/android.svg" alt="">
+  <img id="linux" src="svg/linux.svg" alt="">
+  
+</div>
+<p id="icons-text">O Petipa esta disponivel para <br>celulares e tablets Android, Iphone, Ipad,<br> e computadores Mac, Windows e Linux</p>
+<div class="ipad-png">
+  <img id="asd" src="png/ipad.png" alt="">
+  <p id="ipad-text">iPad -- v1.0 -- 18 MB</p>
+  <a href=""><button id="ipad-butt"><b>Baixar agora</b></button></a>
+  <p id="ipad-txt">Para baixar o Petipa para outro sistema, <br> escolha no menu abaixo:</p>
+ <select name="Devices"  id="choose-butt">
+   <div>
+    <option value="nothing">Escolher outro sistema</option>
+   </div>
+    <optgroup label="Phones">
+      <option value="adroid">Android</option>
+      <option value="iphone">Iphone</option>
+      <option value="ipad">Ipad</option>
+    </optgroup>
+    <optgroup label="Computers">
+      <option value="windows">Windows</option>
+      <option value="mac">Mac</option>
+      <option value="linux">Linux</option>
+    </optgroup>
+  </select> 
+</div>
+  <script>
+    showSlides(slideIndex);
+  </script>
+<div class="about-part">
+  <h1 id="quemsomos"><b>Quem somos</b></h1>
+  <p id="about-text">O Petipa e um software que veio revolucionar a comunicacao entre artistas, coreografos, diretores e equipes de apolo. Atraves de um <br>applicativo
+  ou programa de computador, mostrames a localizacao de cada artista e suas trajetorias pele espaco, como se othassemos <br>de cima do palco. Voce pode criar e editar as
+movimentacoes de acordo com a musica desejada ou apenas assistir uma coreografia ja <br>criada</p>
+<p id="about-text2">Alem da danca artes cenicas, podemos pensar no Petipa auxiliando a visualizacio de qualquer movimentacao em qualquer espaco,<br>seja para modelos em uma passarela, atletas ou
+mesmo uma comissao de frente de uma escola de samba. Vlemos para facilitar e <br>complementar o seu trabalho.</p>
+</div>
+<hr id="end-line">
+<div class="links-end">
+  <a href="#txt"><p id="planos-end"><b>Planos</b></p></a> 
+  <a href="#sd"><p id="download-end"><b>Download</b></p></a>
+  <a href="#quemsomos"><p id="quem-end"><b>Quemsomos</b></p></a>
+  <a href=""><img id="earth-end" src="png/earth.png" alt=""></a>
+  <a href=""><p id="logintext-end"><b>Login</b></p></a>
+</div>
+<script>
+  setTimeout(function(){
+    $(".loader_bg").fadeToggle();
+  }, 1500);
+</script> 
+</body>
+</html>

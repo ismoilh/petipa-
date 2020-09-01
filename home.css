@@ -1,0 +1,568 @@
+
+  .loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+
+  }
+  #logo-loader{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 18%;
+  }
+  
+  #logo{
+  justify-content: right;
+  width: 180px;
+  height: auto;
+ 
+   
+}
+#underlogo{
+    font-size: 12px;
+    color: gray;
+    font-family: Dosis;
+    margin-top: -55px;
+    padding-left: 15px;
+}
+
+#planos{
+    position: absolute; 
+    top: 0;
+     right: 365px;
+      width: 100px;
+       font-size: 15px;
+       font-family: Dosis;
+       color: gray;
+       scroll-behavior: smooth;
+       padding-top: 10px;
+}
+#planos:hover{
+  color: black;
+}
+
+#download{
+    position: absolute; 
+    top: 0;
+     right: 315px;
+      width: 100px;
+       text-align:right;
+       font-size: 15px;
+       font-family: Dosis;
+       color: gray;
+       padding-top: 10px;
+}
+#download:hover{
+  color: black;
+}
+#quem{
+    position: absolute; 
+    top: 0;
+     right: 200px;
+      width: 100px;
+       text-align:right;
+       font-size: 15px;
+       font-family: Dosis;
+       color: gray;
+       padding-top: 10px;
+}
+#quem:hover{
+  color: black;
+}
+#earth{
+    position: absolute; 
+    top: 0;
+     right: 120px;
+      width: 50px;
+      height: 60px;
+       text-align:right;
+       font-size: 15px;
+       color: #d82b8f;
+       padding-top: 10px;
+     
+}
+
+#logintext{
+    position: absolute; 
+    top: 0;
+     right: 50px;
+      width: 100px;
+       text-align:right;
+       font-size: 15px;
+       font-family: Dosis;
+       color:#d82b8f;
+       padding-top: 10px;
+}
+
+#ballerina{
+    position: absolute; 
+    top: 40px;
+     right: 50px;
+       text-align:right;
+       max-width: 100%;
+       width: 700px;
+
+}
+#sua{
+    position: absolute; 
+    top: 150px;
+     max-width: 400px;
+       text-align:left;
+       color: #d82b8f;
+       font-family: Dosis;
+       padding-bottom: 40px;
+       padding-left: 15px;
+}
+#lorem{
+    position: absolute; 
+    top: 230px;
+    width: 400px;
+    max-width: 100%;
+       text-align:left;
+       color: gray;
+       font-family: Dosis;
+       padding-top: 50px;
+       padding-left: 15px;
+}
+#lorem2{
+    position: absolute; 
+    top: 330px;
+    max-width: 400px;
+       text-align:left;
+       color: gray;
+       font-family: Dosis;
+       padding-top: 90px;
+       padding-left: 15px;
+}
+#signupnow {
+    background-color: #d82b8f; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Dosis;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 450px;
+    margin-left:150px;
+    cursor: pointer;
+   
+  }
+  #signupnow:hover{
+    box-shadow: 5px 0px 8px 0 #d82b8f;
+  }
+  #downloadnow {
+    border: 2px #d82b8f solid;
+    color: white;
+    padding: 8px 20px;
+    color: #d82b8f;
+    text-align: center;
+    text-decoration: none;
+    font-family: Dosis;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 350px;
+    margin-left:20px;
+    cursor: pointer;
+  }
+  #downloadnow:hover{
+    background-color: #d82b8f;
+    color:white;
+  }
+  .butt{
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+  * {box-sizing:border-box}
+
+  .slideshow{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+  }
+  .mySlides {
+    display: none;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #d82b8f;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  #vid{
+    width: 100.1%;
+    height: 300px;
+    object-fit: cover;
+    z-index: -100;
+    margin-top: 100px;
+  }
+  #txt{
+      text-align: center;
+      font-family: Dosis;
+      color: #d82b8f;
+      margin-top: 100px;
+      padding-bottom: 20px;
+  }
+
+  #txtlo{
+      margin-left: 340px;
+      font-family: Dosis;
+      color: gray;
+      max-width: 50%;
+      padding-bottom: 40px;
+  }
+
+  .pricing-plan{
+    width: 300px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: Dosis;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555;
+    margin: 15px;
+  }
+  .pricing-plan--highlited{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+  .pricing-plan__special-text{
+    padding:10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background: #007c64;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2)inset;
+  }
+  .pricing-plan__header{
+    padding: 25px;
+    background: #009578;
+    color: #ffffff;
+  }
+  .pricing-plan__title,
+  .pricing-plan__summary{
+    margin: 0;
+    text-align: center;
+  }
+.pricing-plan__title{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.pricing-plan__summary{
+  font-size: 1em;
+  font-weight: 300;
+}
+#crie{
+font-size: 15px;
+}
+.pricing-plan__description{
+  padding: 25px;
+}
+.pricing-plan__list{
+  padding: 0;
+  margin: 0;
+}
+.pricing-plan__feature{
+  list-style: none;
+  margin: 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.9em;
+}
+.pricing-plan__feature:not(:last-child){
+  margin-bottom: 0.5em;
+}
+.pricing-plan__feature::before{
+  content: "\2714";
+  color: #009578;
+  position: absolute;
+  left: 0;  
+}
+.pricing-plan__actions{
+  padding: 25px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-plan__button{
+  display: inline-block;
+  margin: 15px auto;
+  padding:8px 20px;
+  color:#009578;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #009578;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.pricing-plan__button:hover{
+  background: #009578;
+  color: #ffffff;
+}
+.pricing-plan__cost{
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: #000000;
+}
+.pricing-plan-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.pricing-plan-e{
+  height: 700px;
+}
+#exp{
+    text-align: center;
+    font-family: Dosis;
+    color:#d82b8f;
+    margin-top: 80px;
+    padding-bottom: 20px;
+}
+#explo{
+    margin-left: 340px;
+    font-family: Dosis;
+    color: gray;
+    max-width: 50%;
+}
+#sd{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  color:#d82b8f;
+  font-family: Dosis;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:400px;
+  height: auto;
+margin-left: 185px;
+}
+
+  #windows-icon{
+    padding-right: 10px;
+  }
+  #apple-icon{
+    padding-right: 10px;
+  }
+  #android-icon{
+    padding-right: 10px;
+  }
+  #asd{
+    height: 500px;
+    width: auto;
+    padding-left: 140px;
+    padding-top: 90px;
+  }
+  #icons-text{
+   color: gray;
+   font-family: Dosis;
+   text-align:left;
+   margin-top: -80px;
+   margin-left: 730px;
+   font-size: 18px;
+   
+  }
+  #ipad-text{
+    color: gray;
+    font-family: Dosis;
+    text-align:left;
+    margin-top: -380px;
+    margin-left: 820px;
+    font-size: 22px;
+  }
+  #ipad-butt{
+    background-color: #d82b8f; 
+    border: none;
+    color: white;
+    padding: 15px 140px;
+    text-decoration: none;
+    font-family: Dosis;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align:left;
+    margin-top: 10px;
+    margin-left: 730px;
+  }
+  #ipad-txt{
+    text-align: center;
+    margin-left: 460px;
+    font-family: Dosis;
+    color: gray;
+  }
+  #choose-butt{
+    background-color: #e2ca3e; 
+    border: none;
+    color: white;
+    padding: 15px 110px;
+    text-decoration: none;
+    font-family: Dosis;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align:left;
+    margin-top: 10px;
+    margin-left: 730px;
+    -webkit-appearance: none;
+    background-image:cd /home/ismail/Desktop/petipa/svg;
+    }
+  #quemsomos{
+    text-align: center;
+    padding-top: 300px;
+    font-family: Dosis;
+    color: #d82b8f;
+  }
+  #about-text{
+    font-family: Dosis;
+    color: gray;
+    text-align: center;
+  }
+  #about-text2{
+    font-family: Dosis;
+    color: gray;
+    text-align: center;
+  }
+  #end-line{
+    width: 1100px;
+    color: gray;
+    opacity: 0.5;
+    margin-top: 50px;
+  }
+
+  #planos-end{
+    position: absolute; 
+     right: 365px;
+      width: 100px;
+       font-size: 15px;
+       font-family: Dosis;
+       color: gray;
+       scroll-behavior: smooth;
+       padding-top: 10px;
+       margin-right: 150px;
+       
+}
+#planos-end:hover{
+  color: black;
+}
+
+#download-end{
+    position: absolute; 
+     right: 315px;
+      width: 100px;
+       text-align:right;
+       font-size: 15px;
+       font-family: Dosis;
+       color: gray;
+       padding-top: 10px;
+       margin-right: 150px;
+}
+#download-end:hover{
+  color: black;
+}
+#quem-end{
+    position: absolute; 
+     right: 200px;
+      width: 100px;
+       text-align:right;
+       font-size: 15px;
+       font-family: Dosis;
+       color: gray;
+       padding-top: 10px;
+       margin-right: 150px;
+}
+#quem-end:hover{
+  color: black;
+}
+#earth-end{
+    position: absolute; 
+     right: 120px;
+      width: 50px;
+      height: 60px;
+       text-align:right;
+       font-size: 15px;
+       color: #d82b8f;
+       padding-top: 10px;
+       margin-right: 150px;
+     
+}
+
+#logintext-end{
+    position: absolute; 
+     right: 50px;
+      width: 100px;
+       text-align:right;
+       font-size: 15px;
+       font-family: Dosis;
+       color:#d82b8f;
+       padding-top: 10px;
+       margin-right: 150px;
+}
